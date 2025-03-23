@@ -13,7 +13,6 @@ url_api = "http://192.168.1.141:8000/api/v1/estoque/"
 
 # Sidebar
 with st.sidebar:
-    # st.image(image="images/icon.png",width=120)
     st.title("Gerenciamento de Placas e Componentes")
 
 # Seleção da placa
