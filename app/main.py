@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import pandas as pd
 import time
-import pywhatkit as kit
+
 from io import BytesIO
 from fpdf import FPDF
 
@@ -100,14 +100,7 @@ if placa:
                             if st.button("Enviar Agora", key="send_button"):
                                 if numero:
                                     try:
-                                        # Envia o arquivo via WhatsApp
-                                        kit.sendwhats_image(
-                                            receiver=numero,  # Número do destinatário
-                                            img_path=excel_filename,  # Caminho do arquivo
-                                            caption="Segue o arquivo com a lista de componentes.",  # Mensagem opcional
-                                            tab_close=True  # Fecha a aba após o envio
-                                        )
-                                        st.success("Arquivo enviado com sucesso!")
+                                       pass
                                     except Exception as e:
                                         st.error(f"Erro ao enviar o arquivo: {e}")
                                 else:
